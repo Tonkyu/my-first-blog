@@ -15,3 +15,4 @@ def google_analytics(request):
             'GOOGLE_ANALYTICS_TRACKING_ID': ga_tracking_id,
         }
     return {}
+    
