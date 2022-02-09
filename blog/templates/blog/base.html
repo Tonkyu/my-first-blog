@@ -17,12 +17,13 @@
     </head>
     <body>
         {% gtm_body %}
-
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
             {% if user.is_authenticated %}
                 <h1><a href="{% url 'post_new' %}" class="top-menu"><span class="glyphycon gliphycon-plus">New</span></a></h1>
             {% endif %}
+            <h3><a href = "https://www.youtube.com/watch?reload=9&v=qknDI1k39Ic" target="_blank"> 羊文学 PV 「光るとき」  </a></h3>
+            <h3><a href = "https://www.youtube.com/watch?v=Wt6Xkp-8mNY" target="_blank"> SPECIAL OTHERS PV 「AIMS」  </a></h3>
         </div>
         <div class="content container">
             <div class="row">
