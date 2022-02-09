@@ -10,9 +10,9 @@ def google_analytics(request):
 
     # DEBUG=FalseかつGoogleアナリティクスのトラッキングIDを取得できたら、
     # テンプレート内で'GOOGLE_ANALYTICS_TRACKING_ID'という変数を利用できるようにする
-    if ga_tracking_id:
+    if not settings.DEBUG and ga_tracking_id:
         return {
             'GOOGLE_ANALYTICS_TRACKING_ID': ga_tracking_id,
         }
     return {}
-    
+     
