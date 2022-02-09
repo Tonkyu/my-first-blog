@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'gtm'
+    'gtm',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +134,4 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 GOOGLE_ANALYTICS_TRACKING_ID  = 'G-PN7LW1BCQK'
+GOOGLE_TAG_ID = "GTM-WXCLLGZ"
