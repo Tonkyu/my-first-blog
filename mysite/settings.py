@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'gtm',
+    'gtm'
 ]
 
 MIDDLEWARE = [
@@ -133,3 +133,4 @@ STATIC_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+GOOGLE_ANALYTICS_TRACKING_ID  = 'G-PN7LW1BCQK'
