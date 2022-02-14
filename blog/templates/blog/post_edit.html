@@ -5,13 +5,12 @@
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
+        <script>
+            console.log("FORM");
+        </script>
     </form>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        dataLayer.push({
-          postTitle: "!!TITLE!!",
-          postDate: "!!DATE!!",
-        });
-        console("#$#");
+        console.log("POST");
+        console.log(document.forms.title);
     </script>
 {% endblock %}

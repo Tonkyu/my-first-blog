@@ -12,5 +12,14 @@
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
+        <script>
+            console.log("{{post.title}}");
+            console.log("{{post.published_date}}");
+            window.dataLayer = window.dataLayer || [];
+                dataLayer.push({
+                    postTitle: "{{post.title}}",
+                    postDate: "{{post.published_date}}",
+            });
+        </script>
     </div>
 {% endblock %}

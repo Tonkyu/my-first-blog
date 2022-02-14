@@ -6,7 +6,9 @@
         <title>
             TONQ blog
         </title>
-        
+        <script>
+            console.log("TITLE");
+        </script>
         {% gtm_head %}
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  
@@ -25,7 +27,10 @@
         </div>
         <div class="content container">
             <div class="row">
-                <div class="col-md-8">                
+                <div class="col-md-8">      
+                    <script>
+                        console.log("BODY");
+                    </script>          
                     {% block content %}
                     {% endblock %}
                 </div>
